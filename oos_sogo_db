@@ -1,0 +1,87 @@
+
+CREATE TABLE user_profile_tb (
+    user_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    username VARCHAR(200),
+    password VARCHAR(200),
+    name VARCHAR(200),
+    position VARCHAR(200),
+    status VARCHAR(200),
+    branch_id VARCHAR(200),
+    user_type VARCHAR(200),
+    PRIMARY KEY (user_id)
+);
+
+CREATE TABLE hotel_branch_tb (
+    branch_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    code VARCHAR(200),
+    name VARCHAR(200),
+    location VARCHAR(200),
+    notes VARCHAR(200),
+    PRIMARY KEY (branch_id)
+);
+
+
+CREATE TABLE promo_codes_tb (
+    promo_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    promo_code VARCHAR(200),
+    amount VARCHAR(200),
+    percent VARCHAR(200),
+    valid_from VARCHAR(200),
+    valid_to VARCHAR(200),
+    status VARCHAR(200),
+    branch_id VARCHAR(200),
+    PRIMARY KEY (promo_id)
+);
+
+CREATE TABLE food_menu_tb (
+    menu_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    branch_id VARCHAR(200),
+    name VARCHAR(200),
+    description VARCHAR(200),
+    amount VARCHAR(200),
+    quantity VARCHAR(200),
+    category VARCHAR(200),
+    image VARCHAR(200),
+    PRIMARY KEY (menu_id)
+);
+
+CREATE TABLE orders_tb (
+    order_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    datetime_ordered VARCHAR(200),
+    notes VARCHAR(200),
+    datetime_delivered VARCHAR(200),
+    total_amount VARCHAR(200),
+    promo_code VARCHAR(200),
+    promo_amt VARCHAR(200),
+    promo_percent VARCHAR(200),
+    order_status VARCHAR(200),
+    name VARCHAR(200),
+    contact VARCHAR(200),
+    datetime_checkin VARCHAR(200),
+    room_no VARCHAR(200),
+    advance_order VARCHAR(200),
+    branch_id VARCHAR(200),
+    reference_number VARCHAR(200),
+    PRIMARY KEY (order_id)
+);
+
+CREATE TABLE ordered_items_tb (
+    ordered_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    order_id VARCHAR(200),
+    menu_id VARCHAR(200),
+    menu_amt VARCHAR(200),
+    quantity VARCHAR(200),
+    PRIMARY KEY (ordered_id)
+);
+
+CREATE TABLE logs_tb (
+    logs_id INTEGER(20) AUTO_INCREMENT NOT NULL,
+    date VARCHAR(200),
+    time VARCHAR(200),
+    action VARCHAR(200),
+    reference_number VARCHAR(200),
+    username VARCHAR(200),
+    notes VARCHAR(200),
+    PRIMARY KEY (logs_id)
+);
+

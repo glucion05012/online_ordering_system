@@ -1,0 +1,84 @@
+.login-form{
+    width: 30%;
+    margin: auto;
+
+    margin-top: 5em;
+    border: 2px solid gray;
+    padding: 2em;
+}
+
+.login-form img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+
+}
+
+.form-label {
+    margin-bottom: 0 !important;
+}
+
+.login-form input{
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form{
+        width: 80%;
+        margin: auto;
+    
+        margin-top: 5em;
+    }
+}
+
+/* profile */
+.create-form{
+    width: 50%;
+    margin: auto;
+
+    border: 2px solid gray;
+    padding: 2em;
+}
+
+.create-form input, i{
+    margin-bottom: 20px;
+}
+
+.custom-select {
+    margin-bottom: 20px;
+}
+
+.input-group{
+    margin-bottom: 20px;
+}
+
+.create-form button{
+    margin-top: 20px;
+}
+
+.fa-eye-slash:before {
+    cursor: pointer;
+}
+
+.create-form button{
+    width: 30%;
+}
+
+.errormsg{
+color: red;
+}
+
+.successmsg{
+color: green;
+}
+
+/* disable link */
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: gray;
+    opacity: 0.5;
+  }

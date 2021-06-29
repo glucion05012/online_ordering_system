@@ -32,6 +32,8 @@
                     <option <?= $menu['category'] == 'Desserts' ? 'selected=""' : '' ?> value="Desserts" >Desserts</option>
                     <option <?= $menu['category'] == 'Sandwiches' ? 'selected=""' : '' ?> value="Sandwiches" >Sandwiches</option>
                     <option <?= $menu['category'] == 'Beverages' ? 'selected=""' : '' ?> value="Beverages" >Beverages</option>
+                    <option <?= $menu['category'] == 'Food Promo' ? 'selected=""' : '' ?> value="Food Promo" >Food Promo</option>
+                    <option <?= $menu['category'] == 'Special Deals' ? 'selected=""' : '' ?> value="Special Deals" >Special Deals</option>
                 </select>
             </div>
 

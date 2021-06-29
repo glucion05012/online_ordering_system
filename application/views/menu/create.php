@@ -33,6 +33,8 @@
                     <option value="Desserts" >Desserts</option>
                     <option value="Sandwiches" >Sandwiches</option>
                     <option value="Beverages" >Beverages</option>
+                    <option value="Food Promo" >Food Promo</option>
+                    <option value="Special Deals" >Special Deals</option>
                 </select>
             </div>
 

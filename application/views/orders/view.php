@@ -75,7 +75,7 @@
 
     <?php  if($_SESSION['user_type'] == "admin" || $_SESSION['user_type'] == "ba") :?>
         <h5>NEW ORDERS: <span style="color:orange; "><b><?php if(isset($PLACED)){echo $PLACED;}else{ echo"0";}; ?></b></span> | RECEIVED: <?php if(isset($RECEIVED)){echo $RECEIVED;}else{ echo"0";}; ?> | FOR DELIVER: <?php if(isset($DELIVER)){echo $DELIVER;}else{ echo"0";}; ?></h5>
-        <h5>PREPARING: <?php if(isset($PREPARING)){echo $PREPARING;}else{ echo"0";}; ?> | COOKING: <?php if(isset($COOKING)){echo $COOKING;}else{ echo"0";}; ?></h5>
+        <!-- <h5>PREPARING: <?php if(isset($PREPARING)){echo $PREPARING;}else{ echo"0";}; ?> | COOKING: <?php if(isset($COOKING)){echo $COOKING;}else{ echo"0";}; ?></h5> -->
     <?php endif; ?>
 
 </div>

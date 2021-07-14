@@ -134,7 +134,7 @@
             
             <?php if($_SESSION['roomBtn_access'] == 1) : ?> 
                 <div class="col-sm-12">
-                    <button type="submit" class="btn btn-success" name="submit" value="roomBtn" onclick="return confirm('Press OK to confirm save room?')">RECEIVED</button>  
+                    <button type="submit" class="btn btn-success" name="submit" value="roomBtn" onclick="return confirm('Press OK to confirm receive order?')">RECEIVED</button>  
                 </div>
             <?php endif; ?>
             <?php if($_SESSION['kitchenBtn_access'] == 1) : ?> 

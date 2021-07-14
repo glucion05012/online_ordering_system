@@ -20,7 +20,14 @@
     <tbody>           
             <?php foreach($profile as $pf) : ?>
                 <tr class="table-active"> 
-                    <td><?php echo $pf['code']; ?> - <?php echo $pf['hotel_name']; ?></td>
+                <?php
+                    if($pf['user_type'] == 'admin'){
+                        echo '<td>Corp</td>';
+                    }else{
+                        echo '<td>'. $pf['code']; ?> - <?php echo $pf['hotel_name'] .'</td>';
+                    }
+                ?>
+                    
                     <td><?php echo $pf['user_name']; ?></td>
                     <td><?php echo $pf['position']; ?></td>
                     <td><?php echo $pf['user_type']; ?></td>
